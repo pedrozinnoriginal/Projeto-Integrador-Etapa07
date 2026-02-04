@@ -17,11 +17,11 @@ public class TutorServiceTest {
 
     @Test
     public void testValidarDadosTutorCaminhoFeliz() {
-        System.out.println("Executando: testValidarDadosTutorCaminhoFeliz");
+        System.out.println("Executando: testValidarDadosTutor - resultado OK!");
         
         Tutor tutor = new Tutor();
         tutor.setNomeTutor("Pedro Silva");
-        tutor.setCpf("12345678901");
+        tutor.setCpf("123456789010");
         
         try {
             service.validarDadosTutor(tutor);
@@ -33,7 +33,7 @@ public class TutorServiceTest {
 
     @Test
     public void testValidarDadosTutorNomeVazio() {
-        System.out.println("Executando: testValidarDadosTutorNomeVazio");
+        System.out.println("Executando: testValidarDadosTutor Nome Vazio");
         
         Tutor tutor = new Tutor();
         tutor.setNomeTutor(""); // Nome vazio para forçar erro
